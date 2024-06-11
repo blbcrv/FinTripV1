@@ -1,0 +1,24 @@
+/* Assure-toi que le style général des liens de navigation est défini */
+.navbar-nav .nav-link {
+    position: relative;
+    color: #000; /* Couleur du texte */
+    text-decoration: none; /* Enlever les soulignements par défaut */
+}
+
+/* Définir le style pour le trait noir au survol */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    visibility: visible;
+    width: 100%;
+}

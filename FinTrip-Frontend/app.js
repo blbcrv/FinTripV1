@@ -7,7 +7,7 @@ const logger = require('../FinTrip-Backend/logger/logger');
 
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, './src/assets')));
+app.use(express.static(path.join(__dirname, './src/')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));

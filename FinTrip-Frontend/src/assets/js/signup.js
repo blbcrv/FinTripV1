@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Load header
-    fetch('./components/common/header.html')
+    fetch('../../components/common/header.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('header').innerHTML = data;
         });
 
     // Load footer
-    fetch('./components/common/footer.html')
+    fetch('../../components/common/footer.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('footer').innerHTML = data;
