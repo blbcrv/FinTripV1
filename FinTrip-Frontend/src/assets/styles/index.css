@@ -1,0 +1,94 @@
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajustez selon vos besoins */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Organise les enfants verticalement */
+    justify-content: center; /* Centre verticalement les enfants */
+    align-items: center; /* Centre horizontalement les enfants, utile si vous retirez text-align: center */
+}
+
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ici, 100% se réfère à la hauteur du .background-container */
+    background-image: url("../images/img2.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.categorie {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre chaque catégorie */
+}
+
+.categorie-item {
+    text-align: center;
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: inherit; /* Hérite la couleur du texte du parent */
+}
+
+.categorie-item img {
+    width: 120px; /* Taille de l'icône */
+    height: 120px; /* Taille de l'icône */
+    border-radius: 50%; /* Rend l'image circulaire */
+    margin-bottom: 1%; /* Espace entre l'icône et le texte */
+    transition: transform 0.3s ease; /* Animation douce pour l'effet de zoom */
+}
+
+.categorie-item:hover img {
+    transform: scale(1.3); /* Agrandit l'image de 20% au survol */
+}
+
+#div-img-exp1 img {
+    width: 100px; /* Ajustez selon la taille souhaitée */
+    height: 100px; /* Gardez la même valeur que la largeur pour maintenir l'aspect carré initial */
+    object-fit: cover; /* Garde les proportions tout en remplissant l'espace */
+    border-radius: 50%; /* Rend l'image circulaire */
+    display: block; /* Élimine certains espaces blancs par défaut sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement si le conteneur est plus large */
+}
+#div-img-exp2 img {
+    width: 100px; /* Ajustez selon la taille souhaitée */
+    height: 100px; /* Gardez la même valeur que la largeur pour maintenir l'aspect carré initial */
+    object-fit: cover; /* Garde les proportions tout en remplissant l'espace */
+    border-radius: 50%; /* Rend l'image circulaire */
+    display: block; /* Élimine certains espaces blancs par défaut sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement si le conteneur est plus large */
+}
+#div-img-exp3 img {
+    width: 100px; /* Ajustez selon la taille souhaitée */
+    height: 100px; /* Gardez la même valeur que la largeur pour maintenir l'aspect carré initial */
+    object-fit: cover; /* Garde les proportions tout en remplissant l'espace */
+    border-radius: 50%; /* Rend l'image circulaire */
+    display: block; /* Élimine certains espaces blancs par défaut sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement si le conteneur est plus large */
+}
+
+
+#titre-souligne{
+    display: inline-flex; /* S'adapte à la largeur du contenu */
+    border-bottom: 2px solid white; /* Bordure sous le texte */
+    padding-bottom: 5px; /* Espacement entre le texte et la bordure */
+    justify-content: center; /* Centre le contenu si nécessaire */
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+#img-exp1{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
