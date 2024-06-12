@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e98d0f-a0f7-4bd2-9720-f388f5e31427" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/signup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/styles/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/styles/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/styles/signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/components/common/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/components/common/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/components/pages/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/src/components/pages/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/components/pages/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2hjRvp0Bx1qkwWabJNGoODn1Jdo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,7 +44,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "frontend/componentsHandler",
+    "com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain": "true",
+    "git-widget-placeholder": "frontend/signupForm",
     "last_opened_file_path": "/Users/clement/Documents/Dev/FinTripV1",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -79,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718105733923</updated>
       <workItem from="1718105734942" duration="6043000" />
+      <workItem from="1718183836117" duration="5038000" />
     </task>
     <servers />
   </component>
