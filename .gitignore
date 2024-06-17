@@ -1,7 +1,6 @@
 .DS_Store
-.idea
 .idea/*
-
+FinTrip-Backend/auth-service/package*.json
 # Logs
 logs
 *.log
