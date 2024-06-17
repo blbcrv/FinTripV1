@@ -1,9 +1,10 @@
 // services/authService.js
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { User } = require('../models/user');
+const { User } = require('../models');
 
-exports.signup = async ({ username, password }) => {
+exports.signup = async ({ username, email, password }) => {
+    console.log(username, password, email)
     const userExists = await User.findOne({ where: { username } });
     if (userExists) {
         throw new Error(`L'utilisateur existe déjà`);

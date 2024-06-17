@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e98d0f-a0f7-4bd2-9720-f388f5e31427" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/controllers/authControllers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/routes/authRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/services/authServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinTrip-Backend/tripPlanner-service/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Backend/tripPlanner-service/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Backend/auth-service/controllers/authControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/controllers/authControllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Backend/auth-service/services/authServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Backend/auth-service/services/authServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/assets/js/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/src/components/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/components/common/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinTrip-Frontend/src/components/pages/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/FinTrip-Frontend/src/components/pages/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain": "true",
-    "git-widget-placeholder": "backend/authentication/signup",
+    "git-widget-placeholder": "frontend/authentication/link",
     "last_opened_file_path": "/Users/clement/Documents/Dev/FinTripV1/FinTrip-Backend/auth-service",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",

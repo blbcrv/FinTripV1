@@ -20,31 +20,6 @@ document.getElementById('nextBtn').addEventListener('click', function() {
     document.getElementById('quest-signup').classList.remove('hidden');
 });
 
-document.getElementById('submitBtn').addEventListener('click', async function() {
-    const inscriptionData = new FormData(document.getElementById('inscriptionForm'));
-    const questionnaireData = new FormData(document.getElementById('questionnaireForm'));
-
-    const allData = new FormData();
-    for (let [key, value] of inscriptionData.entries()) {
-        allData.append(key, value);
-    }
-    for (let [key, value] of questionnaireData.entries()) {
-        allData.append(key, value);
-    }
-
-    const response = await fetch('/submit', {
-        method: 'POST',
-        body: allData
-    });
-
-    const result = await response.json();
-    if (result.success) {
-        alert('Inscription réussie et questionnaire soumis!');
-    } else {
-        alert('Erreur lors de la soumission.');
-    }
-});
-
 $(document).ready(function(){
     $('#datePickerDeparture').datepicker({
         format: 'dd/mm/yyyy',
@@ -65,3 +40,31 @@ $(document).ready(function(){
         todayHighlight: true
     });
 });
+
+
+// utilisation API
+async function signup() {
+
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const response = await fetch('http://localhost:3003/api/auth/signup', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, email, password })
+    });
+
+    const messageElement = document.getElementById('message');
+
+    if (response.ok) {
+        const data = await response.json();
+        window.location.href = '/';
+    } else {
+        const errorData = await response.json();
+        messageElement.textContent = errorData.message;
+        messageElement.style.color = 'red';
+    }
+};
