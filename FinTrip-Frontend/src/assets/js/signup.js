@@ -46,8 +46,19 @@ document.getElementById('submitBtn').addEventListener('click', async function() 
 });
 
 $(document).ready(function(){
-    $('#datepickerDeparture').date({
+    $('#datePickerDeparture').datepicker({
         format: 'dd/mm/yyyy',
+        dateFormat: 'dd/mm/yy',
+        startDate: '-100y',
+        endDate: '0d',
+        autoclose: true,
+        todayHighlight: true
+    });
+});
+$(document).ready(function(){
+    $('#datePickerReturn').datepicker({
+        format: 'dd/mm/yyyy',
+        dateFormat: 'dd/mm/yy',
         startDate: '-100y',
         endDate: '0d',
         autoclose: true,
