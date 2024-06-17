@@ -1,6 +1,9 @@
 .DS_Store
 .idea/*
 FinTrip-Backend/auth-service/package*.json
+FinTrip-Backend/auth-service/config/*
+FinTrip-Backend/auth-service/migrations/*
+FinTrip-Backend/auth-service/models/*
 # Logs
 logs
 *.log
