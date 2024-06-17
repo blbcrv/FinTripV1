@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 3003
 const cors = require('cors');
 const logger = require('../logger/logger');
 
@@ -13,5 +12,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    logger.info(`Le micro-service est démarré sur le port ${port}`, { msName: 'tripPlanner' });
+    logger.info(`Le micro-service est démarré sur le port ${process.env.PORT}`, { msName: 'tripPlanner' });
 })
