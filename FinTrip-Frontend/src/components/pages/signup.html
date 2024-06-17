@@ -33,13 +33,102 @@
                     <label for="confirm-password" class="form-label">Confirmer le mot de passe</label>
                     <input type="password" class="form-control" id="confirm-password" required>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+                <button type="button" id="nextBtn" class="btn btn-primary w-100">Suivant</button>
             </form>
+            <div id="quest-signup" class="hidden">
+                <h2>Questionnaire</h2>
+                <form id="questionnaireForm">
+                    <h6>Type de voyages que vous cherchez</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckQ1R1">
+                        <label class="form-check-label" for="flexCheckQ1R1">
+                            Aventure
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckQ1R2">
+                        <label class="form-check-label" for="flexCheckQ1R2">
+                            Culture
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="number-of-people" class="form-label">Nombre de personnes</label>
+                        <select class="form-select" id="number-of-people" required>
+                            <option value="">Sélectionner le nombre de personnes</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="type-of-people" class="form-label">Vous partez :</label>
+                        <select class="form-select" id="type-of-people" required>
+                            <option value="">Sélectionner le nombre de personnes</option>
+                            <option value="1">En couple</option>
+                            <option value="2">Entre amis</option>
+                            <option value="3">En famille</option>
+                            <option value="5">Avec l'entreprise</option>
+                            <option value="4">Seul</option>
+                        </select>
+                    </div>
+
+                    <h6>Type d'activités que vous cherchez</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckQ2R1">
+                        <label class="form-check-label" for="flexCheckQ2R1">
+                            Gastronomie
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckQ2R2">
+                        <label class="form-check-label" for="flexCheckQ2R2">
+                            Sportif
+                        </label>
+                    </div>
+
+                    <h6>Budget</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">€</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <h6>Dates de séjour</h6>
+                    <div class="mb-3">
+                        <div class="input-group input-daterange">
+                            <input type="text" class="form-control" value="17/06/2024" id="datePickerDeparture">
+
+                            <div class="input-group-addon">à </div>
+
+                            <input type="text" class="form-control" value="30/06/2024" id="datePickerReturn">
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" id="submitBtn">S'inscrire</button>
+                </form>
+            </div>
         </div>
-    </div>
+        </div>
+
+
+
+
 </main>
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="../../assets/js/signup.js"></script>
 </body>
