@@ -1,23 +1,22 @@
 // services/authService.js
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-
-const users = []; // Utilisation d'un tableau en mémoire pour cet exemple
+const { User } = require('../models/user');
 
 exports.signup = async ({ username, password }) => {
-    const userExists = users.find(user => user.username === username);
+    const userExists = await User.findOne({ where: { username } });
     if (userExists) {
         throw new Error(`L'utilisateur existe déjà`);
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    const newUser = { username, password: hashedPassword };
-    users.push(newUser);
-    return { username };
+    const newUser = await User.create({ username, email, password: hashedPassword });
+
+    return { username: newUser.username, email: newUser.email };
 };
 
 exports.login = async ({ username, password }) => {
-    const user = users.find(user => user.username === username);
+    const user = await User.findOne({ where: { username } });
     if (!user) {
         throw new Error(`Nom d'utilisateur ou mot de passe incorrect`);
     }

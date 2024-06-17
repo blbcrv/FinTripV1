@@ -1,4 +1,3 @@
-// controllers/authController.js
 const authService = require('../services/authServices');
 
 exports.signup = async (req, res) => {
